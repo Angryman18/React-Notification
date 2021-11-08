@@ -4,7 +4,6 @@ import React from "react";
 import { useDispatch } from "react-redux";
 
 const Notification = ({ text }) => {
-  //   const [visible, setVisible] = useState(true);
 
   const dispatch = useDispatch();
 
@@ -39,7 +38,7 @@ export default Notification;
 
 const NotificationComp = styled.div`
   padding: 10px;
-  position: absolute;
+  position: fixed;
   z-index: 99999999;
   background: transparent;
   right: 0;
